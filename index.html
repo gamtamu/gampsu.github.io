@@ -33,8 +33,8 @@
     line-height: 1.55;
   }
 
-  a { color: var(--accent-dark); text-decoration: none; border-bottom: 1px solid transparent; }
-  a:hover { border-bottom-color: var(--accent-dark); }
+  a { color: #0d6e68; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
+  a:hover { color: var(--accent-dark); }
 
   .wrap {
     max-width: 880px;
@@ -137,6 +137,12 @@
     letter-spacing: 0;
   }
 
+  /* ---------- Other section ---------- */
+  .cv-pointer {
+    font-size: 1.1rem;
+    margin: 0 0 14px;
+  }
+
   /* ---------- Footer ---------- */
   footer {
     padding-top: 28px;
@@ -166,7 +172,7 @@
         Email: <a href="mailto:ngautam@syr.edu">ngautam@syr.edu</a>
       </p>
       <div class="quicklinks">
-        <a href="Gautam_web_CV.pdf">CV (PDF)</a>
+        <a href="gautam_web_CV.pdf">CV (PDF)</a>
         <a href="https://ecs.syracuse.edu/faculty-staff/natarajan-gautam">Syracuse ECS profile</a>
       </div>
     </div>
@@ -186,11 +192,6 @@
       <strong>Application domains:</strong> Logistics and scheduling; energy management;
       computer&ndash;communication and information networks; smart-manufacturing systems;
       service industry.
-    </p>
-    <p class="note">
-      Earlier work on micro-grids, renewable sources, and storage &mdash; the GREEN project &mdash;
-      is archived on my former Texas A&amp;M page:
-      <a href="https://gautam.engr.tamu.edu/green.html">GREEN site (hosted at Texas A&amp;M)</a>.
     </p>
   </section>
 
@@ -216,10 +217,17 @@
     </div>
 
     <div class="book-row">
+      <img src="book1_cover.jpg" alt="Cover of Analysis of Queues: Methods and Applications" />
       <div class="book-text">
         <p class="book-title">Analysis of Queues: Methods and Applications</p>
-        <p>802 pages, CRC Press (Taylor &amp; Francis), Boca Raton, FL, 2012.
-          Click <a href="book.html">here</a> for more information (errata, solutions manual, etc.).</p>
+        <p>802 pages, CRC Press (Taylor &amp; Francis), Operations Research Series, 2012.</p>
+        <p>
+          <a href="https://www.routledge.com/Analysis-of-Queues-Methods-and-Applications/Gautam/p/book/9781138073067">Paperback (Routledge)</a>
+          &nbsp;|&nbsp;
+          <a href="https://www.taylorfrancis.com/books/mono/10.1201/b11858/analysis-queues-natarajan-gautam">eBook (Taylor &amp; Francis)</a>
+          &nbsp;|&nbsp;
+          <a href="book.html">more information</a>
+        </p>
       </div>
     </div>
   </section>
@@ -232,10 +240,6 @@
     <p>
       Publications are listed chronologically <a href="pubs_year.html">here</a>
       and organized by research area <a href="areas.html">here</a>.
-    </p>
-    <p class="note">
-      A small collection of <a href="paradox.pdf">paradoxes and counter-intuitive results</a>
-      in analysis of queues.
     </p>
   </section>
 
@@ -290,9 +294,27 @@
     </p>
   </section>
 
+  <!-- ============================================================
+       OTHER
+       ============================================================ -->
+  <section id="other">
+    <h2>Other</h2>
+    <p class="cv-pointer">
+      See <a href="gautam_web_CV.pdf">CV</a> for editorships, awards, patents, sponsored research,
+      invited talks, and service not listed on this page.
+    </p>
+    <p>
+      A small collection of <a href="paradox.pdf">paradoxes and counter-intuitive results</a>
+      in analysis of queues.
+    </p>
+    <p class="note">
+      Earlier work on micro-grids, renewable sources, and storage &mdash; the GREEN project &mdash;
+      is archived on my former Texas A&amp;M page:
+      <a href="https://gautam.engr.tamu.edu/green.html">GREEN site (hosted at Texas A&amp;M)</a>.
+    </p>
+  </section>
+
   <footer>
-    <p>See <a href="Gautam_web_CV.pdf">CV</a> for editorships, awards, patents, sponsored research,
-       invited talks, and service not listed on this page.</p>
     <p>This page was last modified August 2026.</p>
   </footer>
 
