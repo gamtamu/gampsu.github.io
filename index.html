@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Natarajan Gautam</title>
+<meta name="description" content="Natarajan Gautam - Professor, Syracuse University" />
+
+<style>
+  /* ============================================================
+     COLORS / FONTS -- edit these to re-theme the whole page
+     ============================================================ */
+  :root {
+    --accent: #0f6f6a;       /* teal, echoes the new book's cover */
+    --accent-dark: #0a4f4b;
+    --text: #222222;
+    --muted: #5a5a5a;
+    --bg: #ffffff;
+    --bg-soft: #f6f7f7;
+    --rule: #dddddd;
+    --font-body: Georgia, "Times New Roman", Times, serif;
+    --font-heading: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  a { color: var(--accent-dark); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent-dark); }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ---------- Header ---------- */
+  header.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 48px 0 32px;
+    border-bottom: 3px solid var(--accent);
+  }
+
+  header.hero img.photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+
+  header.hero .id-block { flex: 1; min-width: 260px; }
+
+  header.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    letter-spacing: 0.3px;
+    margin: 0 0 4px;
+    color: var(--accent-dark);
+  }
+
+  header.hero p.title-line {
+    margin: 0 0 2px;
+    color: var(--muted);
+  }
+
+  header.hero p.address {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  header.hero .quicklinks {
+    margin-top: 14px;
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+  }
+  header.hero .quicklinks a {
+    margin-right: 16px;
+    white-space: nowrap;
+  }
+
+  /* ---------- Sections ---------- */
+  section { padding: 34px 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: none; }
+
+  section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-dark);
+    margin: 0 0 16px;
+  }
+
+  ul.tight { margin: 0; padding-left: 22px; }
+  ul.tight li { margin-bottom: 6px; }
+
+  .note {
+    font-size: 0.92rem;
+    color: var(--muted);
+  }
+
+  /* ---------- Books ---------- */
+  .book-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 22px;
+  }
+  .book-row img {
+    width: 90px;
+    flex-shrink: 0;
+    border: 1px solid var(--rule);
+  }
+  .book-row .book-text p { margin: 0 0 6px; }
+  .book-row .book-text .book-title { font-weight: bold; }
+
+  /* ---------- Students ---------- */
+  .students h3 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--muted);
+    margin: 22px 0 8px;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    padding-top: 28px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 560px) {
+    header.hero { flex-direction: column; align-items: center; text-align: center; }
+    header.hero .quicklinks a { display: inline-block; margin: 4px 8px; }
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <!-- Replace with your own headshot once ready; keep the same filename or update the src below -->
+    <img class="photo" src="gautam_headshot.jpg" alt="Photo of Natarajan Gautam" />
+    <div class="id-block">
+      <h1>Natarajan Gautam</h1>
+      <p class="title-line">Professor, Electrical Engineering and Computer Science</p>
+      <p class="title-line">Syracuse University</p>
+      <p class="address">
+        3-171 CST, 111 College Pl., Syracuse, NY 13244<br />
+        Email: <a href="mailto:ngautam@syr.edu">ngautam@syr.edu</a>
+      </p>
+      <div class="quicklinks">
+        <a href="Gautam_web_CV.pdf">CV (PDF)</a>
+        <a href="https://ecs.syracuse.edu/faculty-staff/natarajan-gautam">Syracuse ECS profile</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       RESEARCH
+       ============================================================ -->
+  <section id="research">
+    <h2>Research</h2>
+    <p>
+      <strong>Methodological domains:</strong> Stochastic modeling, control, and optimization;
+      data science; prediction and forecasting; prescriptive analytics; queues and networks;
+      applied probability and statistics.
+    </p>
+    <p>
+      <strong>Application domains:</strong> Logistics and scheduling; energy management;
+      computer&ndash;communication and information networks; smart-manufacturing systems;
+      service industry.
+    </p>
+    <p class="note">
+      Earlier work on micro-grids, renewable sources, and storage &mdash; the GREEN project &mdash;
+      is archived on my former Texas A&amp;M page:
+      <a href="https://gautam.engr.tamu.edu/green.html">GREEN site (hosted at Texas A&amp;M)</a>.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       BOOKS
+       ============================================================ -->
+  <section id="books">
+    <h2>Books</h2>
+
+    <div class="book-row">
+      <img src="book2_cover.jpg" alt="Cover of Solar Power Forecasting" />
+      <div class="book-text">
+        <p class="book-title">Solar Power Forecasting: Using Time Series and Machine Learning</p>
+        <p>CRC Press (Taylor &amp; Francis), Operations Research Series, 2026.</p>
+        <p>
+          <a href="https://www.routledge.com/Solar-Power-Forecasting-Using-Time-Series-and-Machine-Learning/Gautam/p/book/9781032516950">Hardcover (Routledge)</a>
+          &nbsp;|&nbsp;
+          <a href="https://www.taylorfrancis.com/books/mono/10.1201/9781003403500/solar-power-forecasting-natarajan-gautam">eBook (Taylor &amp; Francis)</a>
+          &nbsp;|&nbsp;
+          <a href="book2.html">more information</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="book-row">
+      <div class="book-text">
+        <p class="book-title">Analysis of Queues: Methods and Applications</p>
+        <p>802 pages, CRC Press (Taylor &amp; Francis), Boca Raton, FL, 2012.
+          Click <a href="book.html">here</a> for more information (errata, solutions manual, etc.).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PUBLICATIONS
+       ============================================================ -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>
+      Publications are listed chronologically <a href="pubs_year.html">here</a>
+      and organized by research area <a href="areas.html">here</a>.
+    </p>
+    <p class="note">
+      A small collection of <a href="paradox.pdf">paradoxes and counter-intuitive results</a>
+      in analysis of queues.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       PH.D. STUDENTS
+       ============================================================ -->
+  <section id="students" class="students">
+    <h2>Ph.D. Students (Advisor / Co-Advisor)</h2>
+
+    <h3>Current</h3>
+    <ul class="tight">
+      <li>Brianna Gillfillian, &ldquo;Data-driven Approaches for Logistics,&rdquo; expected May 2029.</li>
+      <li>Polina Kozyreva, &ldquo;Analytical Models in Wireless Networks,&rdquo; expected May 2028.</li>
+    </ul>
+
+    <h3>Graduated</h3>
+    <ul class="tight">
+      <li>Rohit Dube, &ldquo;A Data Driven Integrated Approach for Managing Microgrids with Uncertainties,&rdquo; December 2025.</li>
+      <li>Neil Diaz, &ldquo;On the Allocation of Aperiodic Traffic in TSN/TAS Networks,&rdquo; August 2023. (Texas A&amp;M University)</li>
+      <li>Sudarshan Rajan, &ldquo;Analysis of Sequential Decision Making Processes Under Exogenous Uncertainty,&rdquo; December 2020. (Walmart)</li>
+      <li>Jin Xu, &ldquo;Online Scheduling in Smart Manufacturing,&rdquo; August 2020. (The Chinese University of Hong Kong, Shenzhen)</li>
+      <li>Soongeol Kwon, &ldquo;Demand-Side Management for Energy-Efficient Data Center Operations with Renewable Energy and Demand Response,&rdquo; May 2017. (SUNY Binghamton)</li>
+      <li>Samyukta Sethuraman, &ldquo;On Fork-join Queues and Maximum Ratio Cliques,&rdquo; December 2015. (Co-Advisor) (Amazon)</li>
+      <li>Arupa Mohapatra, &ldquo;Energy Management in Wireless Sensor Network Operations,&rdquo; August 2013. (Oracle)</li>
+      <li>Ezgi Can Eren, &ldquo;Stochastic Modeling and Analysis of Plant Microtubule System Characteristics,&rdquo; May 2012. (PROS)</li>
+      <li>Young Myoung Ko, &ldquo;Transient Analysis of Large Scale Stochastic Service Systems,&rdquo; May 2011. (Sabre Holdings; POSTECH, Korea)</li>
+      <li>Piyush Goel, &ldquo;Stochastic Dynamic Programming and Stochastic Fluid-Flow Models in the Design and Analysis of Web-Server Farms,&rdquo; August 2009. (American Airlines)</li>
+      <li>Cesar Rincon Mateus, &ldquo;Dynamic Resource Allocation for Energy Management in Data Centers,&rdquo; December 2008. (Northwest Airlines; Delta Airlines)</li>
+      <li>Yiyu Chen, &ldquo;Performance and Control of Parallel Multi-server Queues with Applications to Web Hosting Services,&rdquo; December 2006. (IBM)</li>
+      <li>Sai Rajesh Mahabhashyam, &ldquo;Queueing Models for Resource Sharing in Computer Systems,&rdquo; August 2006. (Oracle; Serus Corp.)</li>
+      <li>Seokcheon Lee, &ldquo;An Adaptive Control Approach for Survivability of Distributed Information Systems with Finite Load,&rdquo; December 2005. (Co-Advisor) (Purdue University)</li>
+      <li>H. Cenk Ozmutlu, &ldquo;Anomaly Detection in Heterogeneous Communication Networks,&rdquo; August 2001. (Co-Advisor) (Uludag University, Turkey)</li>
+      <li>Jeff P. Kharoufeh, &ldquo;Stochastic Analysis of Link Travel Times: Distributions, Moments, and Approximations,&rdquo; May 2001. (AFIT; Northeastern University; University of Pittsburgh)</li>
+    </ul>
+  </section>
+
+  <!-- ============================================================
+       COURSES
+       ============================================================ -->
+  <section id="courses">
+    <h2>Courses (Syracuse University)</h2>
+    <ul class="tight">
+      <li><strong>CIS 600</strong> &ndash; Analytics for Sequential Data (Graduate). Spring 2025.</li>
+      <li><strong>CIS 662</strong> &ndash; Intro to Machine Learning Algorithms (Graduate). Spring 2023&ndash;2026.</li>
+      <li><strong>CIS 477</strong> &ndash; Intro to Analysis of Algorithms (Undergraduate). Fall 2023&ndash;2026.</li>
+      <li><strong>CIS 400</strong> &ndash; Intro to Machine Learning (Undergraduate). Fall 2022&ndash;2023.</li>
+      <li><strong>ECE 603</strong> &ndash; Functional Methods of Engineering Analysis (Graduate). Fall 2022.</li>
+    </ul>
+    <p class="note">
+      For courses taught at Texas A&amp;M, Penn State, and NPTEL (IIT-Madras), see
+      <a href="other_courses.html">other courses</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>See <a href="Gautam_web_CV.pdf">CV</a> for editorships, awards, patents, sponsored research,
+       invited talks, and service not listed on this page.</p>
+    <p>This page was last modified August 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
